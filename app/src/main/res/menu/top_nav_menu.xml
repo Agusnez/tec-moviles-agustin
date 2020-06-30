@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_refresh"
+        android:onClick="onRefresh"
+        app:showAsAction="ifRoom|withText"
+        android:title="Refresh">
+    </item>
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:onClick="onFilterNavigation"
+        android:title="Filter"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

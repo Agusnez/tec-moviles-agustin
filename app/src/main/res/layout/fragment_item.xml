@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/custom_border"
+    android:orientation="horizontal"
+    android:showDividers="beginning">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:layout_toStartOf="@+id/fav_icon"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#A7A7A7"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/fav_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:foregroundTint="#FFFFFF"
+        android:src="@drawable/ic_star_empty"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+</RelativeLayout>
